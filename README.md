@@ -1,4 +1,4 @@
-# Ubuntu-14.04.x-64bit-LAMP-Setup
+# Ubuntu 14.04.x 64bit LAMP Setup
 
 log into server
 ```
