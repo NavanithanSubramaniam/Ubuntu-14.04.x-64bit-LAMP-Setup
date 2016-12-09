@@ -101,7 +101,7 @@ apt-get --yes install mysql-server mysql-client
 
 install OpenSSH Server
 ```
-apt-get install ssh
+apt-get --yes install ssh
 ```
 
 use custom port, edit the ssh configuration file
