@@ -113,6 +113,15 @@ find 'Port 22' (ports, IPs and protocols we listen for) & change as below
 ```
 Port 1123
 ```
+>####need ssh key?
+> generate an rsa ssh key
+>```
+ssh-keygen -t rsa -C "domain"
+```
+>copy the *Public Key*
+>```
+cat ~/.ssh/id_rsa.pub
+```
 
 reboot server
 ```
