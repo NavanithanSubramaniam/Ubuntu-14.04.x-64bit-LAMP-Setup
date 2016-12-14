@@ -66,13 +66,13 @@ restart apache2
 service apache2 restart
 ```
 
-hide web server signature
-```
+>hide web server signature
+>```
 nano /etc/apache2/conf-available/security.conf 
 ```
 
-find & change as below
-```
+>find & change as below
+>```
 ServerTokens ProductOnly
 ServerSignature Off
 ```
