@@ -66,6 +66,17 @@ restart apache2
 service apache2 restart
 ```
 
+hide web server signature
+```
+nano /etc/apache2/conf-available/security.conf 
+```
+
+find & change as below
+```
+ServerTokens ProductOnly
+ServerSignature Off
+```
+
 ## php
 
 setup and install php
@@ -83,11 +94,13 @@ update php.ini (/etc/php5/apache2/php.ini)
 ; max_input_vars = 1000
 ; post_max_size = 20M
 ; upload_max_filesize = 20M
+expose_php = On
 
 update to 
 max_input_vars = 100000
 post_max_size = 20M
 upload_max_filesize = 20M
+expose_php = Off
 ```
 
 ## mysql
